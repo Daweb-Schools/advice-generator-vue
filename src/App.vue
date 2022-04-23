@@ -1,3 +1,6 @@
+<script setup>
+import AdviceGenerator from "./components/AdviceGenerator.vue";
+</script>
 
 <template>
   <main>
@@ -5,18 +8,7 @@
   </main>
 </template>
 
-<script>
-import AdviceGenerator from "./components/AdviceGenerator.vue";
 
-export default {
-  data() {
-    return {};
-  },
-  components: {
-    AdviceGenerator,
-  },
-};
-</script>
 
 <style>
 @import "./assets/base.css";

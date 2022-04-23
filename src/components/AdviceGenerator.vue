@@ -1,3 +1,21 @@
+<script setup>
+import IconDice from "./design/IconDice.vue";
+import DividerPattern from "./design/DividerPattern.vue";
+import { ref, onMounted } from "vue";
+const advice = ref({});
+
+async function rollDice() {
+  await fetch("https://api.adviceslip.com/advice")
+    .then((response) => response.json())
+    .then((data) => {
+      advice.value = data.slip;
+    });
+}
+
+rollDice();
+</script>
+
+
 <template>
   <div class="advice-generator">
     <div class="advice-content">
@@ -10,33 +28,7 @@
   </div>
 </template>
 
-<script>
-import IconDice from "./design/IconDice.vue";
-import DividerPattern from "./design/DividerPattern.vue";
-export default {
-  data() {
-    return {
-      advice: {},
-    };
-  },
-  created() {
-    this.rollDice();
-  },
-  components: {
-    IconDice,
-    DividerPattern,
-  },
-  methods: {
-    async rollDice() {
-      await fetch("https://api.adviceslip.com/advice")
-        .then((response) => response.json())
-        .then((data) => {
-          this.advice = data.slip;
-        });
-    },
-  },
-};
-</script>
+
 
 <style scoped>
 .advice-generator {
