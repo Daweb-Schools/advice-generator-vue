@@ -1,14 +1,27 @@
-# advice-generator
+# Advice Generator App
 
-This template should help get you started developing with Vue 3 in Vite.
+Advice generator app using the [Advice Slip API](https://api.adviceslip.com/) and VUE
 
-## Recommended IDE Setup
+![active-states](https://user-images.githubusercontent.com/35883748/164947140-f9a21080-020f-41c9-8dfb-491b6642a2c4.jpg)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+## Colors
 
-## Customize configuration
+### Primary
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800
+
 
 ## Project Setup
 
